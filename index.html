@@ -32,14 +32,69 @@
             <h2 style="color:black;text-align:center" class="form-control col-8">
                 Transform your vehicle into beasts
             </h2>
-            <img src="https://i.pinimg.com/originals/db/79/1c/db791c6d62ba7ec5635264f8533152cd.gif" style="width:1550px">
+            <img src="https://4.bp.blogspot.com/-3bbQnZ9OKHc/WUBGBp4PBfI/AAAAAAAAGPs/3OI5YhT7VpgZZ5KeefpqbekuIruWSPDLgCLcB/s1600/Armie.gif" style="width:1550px">
             <br>
             <h1 style="text-align:center">ABOUT US</h1>
             <p class="responsive" style="font:25px timesnewroman;text-align:center"><br>{{message}}</p>
         </script>
+        <!--
+            second controller 
+        -->
         <script type="text/ng-template" id="manipulate.html">
+            <div style="text-align: center;font-family: timesnewroman;font-size: 40px">MECHANIC DETAILS</div>
+
+            <div class="row">
+                <table class="table table-striped">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">
+
+                            </th>
+                            <th scope="col">Name<br>
+
+                            </th>
+                            <th scope="col">Date OF joining<br>
+
+                            </th>
+                            <th scope="col">Experience in Years<br>
+
+                            </th>
+                            <th scope="col">Salary<br>
+
+                            </th>
+                            <th scope="col">Work Location<br>
+
+                            </th>
+                            <th scope="col">Type<br>
+
+                            </th>
+                            <th scope="col">Contact No<br>
+
+                            </th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+            </div>
+            <tr ng-repeat="item in names">
+                <td></td>
+                <td>{{item.name|uppercase}}</td>
+                <td>{{item.doj|date:"dd/MM/yyyy"}}</td>
+                <td>{{item.exp}}</td>
+                <td>&#x20B9; {{item.price|number:0}}</td>
+                <td>{{item.location|lowercase}}</td>
+                <td>{{item.type}}</td>
+                <td>&#x260E; {{item.contact}}</td>
+            </tr>
+            </tr>
+
+            </tbody>
+            </table>
 
         </script>
+        <!--
+            third controller
+        -->
         <script type="text/ng-template" id="mechanicdata.html">
             <div style="text-align: center;font-family: timesnewroman;font-size: 40px">MECHANIC DETAILS</div>
             <div class="row form-group" style="text-align: center">
